@@ -4,3 +4,6 @@
 
 # 1-2 tfrecrod -> 모델학습을 위한 데이터셋
 !melody_rnn_create_dataset --input=/content/drive/MyDrive/class_data/tfrecord --output_dir=/content/drive/MyDrive/class_data/dataset --eval_ratio=0.0 --config=basic_rnn
+
+
+https://github.com/magenta/magenta/tree/main/magenta/models/melody_rnn
