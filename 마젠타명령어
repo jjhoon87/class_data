@@ -9,3 +9,6 @@
 
 # 2. 모델 학습
 !melody_rnn_train --config=basic_rnn --run_dir=/content/drive/MyDrive/class_data/run1 --sequence_example_file=/content/drive/MyDrive/class_data/dataset/training_melodies.tfrecord --hparams="batch_size=64,rnn_layer_sizes=[64]" --num_training_steps=1000
+
+# 3. 음악 생성
+!melody_rnn_generate --config=basic_rnn --run_dir=/content/drive/MyDrive/class_data/run1 --output_dir=/content/drive/MyDrive/class_data/generated --num_outputs=100 --num_steps=128 --hparams="batch_size=64,rnn_layer_sizes=[64]" --primer_melody="[60]"
